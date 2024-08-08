@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Pendaftaran - SALUT INSAN CENDEKIA</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">SALUT INSAN CENDEKIA</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pmb.html">Pendaftaran</a></li>
+                            <li class="nav-item"><a class="nav-link" href="kuliah.html">Perkuliahan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="download.html">Pusat Download</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page Content-->
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">SALUT INSAN CENDEKIA</span></h1>
+                    <div class="fs-5 fw-light text-muted">Perumahan Griya Pesona Tanjung Asri No. 18 Kec. Tanjung - Brebes 52254</div>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Experience Section-->
+                        <section>
+                            <!-- <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                                Download resume button-->
+                                <!-- Note: Set the link href target to a PDF file within your project-->
+                                <!--<a class="btn btn-primary px-4 py-3" href="#!">
+                                    <div class="d-inline-block bi bi-download me-2"></div>
+                                    Download Resume
+                                </a>
+                            </div> -->
+                            <!-- Experience Card 1-->
+                            <div class="container px-5 my-5">
+                                <div class="text-center mb-5">
+                                    <h1 class="display-5 fw-bolder mb-0">Pendaftaran Mahasiswa Baru</h1>
+                                </div>
+                    
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-lg-8">
+                                        <form id="registrationForm" action="pmb.php" method="POST">
+                                            <div class="mb-3">
+                                                <label for="fullName" class="form-label">Nama Lengkap</label>
+                                                <input type="text" class="form-control" id="fullName" name="nama" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="email" name="email" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="tempatlahir" class="form-label">Tempat Lahir</label>
+                                                <input type="text" class="form-control" id="tempatlahir" name="tempatlahir" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="tanggallahir" class="form-label">Tanggal Lahir</label>
+                                                <input type="date" class="form-control" id="tanggallahir" name="tgllahir" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="major" class="form-label">Program Studi</label>
+                                                <select class="form-select" id="major" name="jurusan">
+                                                    <option value="">Pilih Program Studi</option>
+                                                    <option value="D3-perpajakan">D3 - Perpajakan</option>
+                                                    <option value="D4-kearsipan">D4 - Kearsipan</option>
+                                                    <option value="manajemen">S1-Manajemen</option>
+                                                    <option value="akuntansi">S1-Akuntansi</option>
+                                                    <option value="ilkom">S1-Ilmu Komunikasi</option>
+                                                    <option value="pgsd">S1-Pendidikan Guru Sekolah Dasar</option>
+                                                    <option value="ipem">S1-Ilmu Pemerintahan</option>
+                                                    <option value="SI">S1-Sistem Informasi</option>
+                                                    <option value="hukum">S1-Ilmu Hukum</option>
+                                                    <option value="pgpaud">S1-Pendidikan Guru Pendidikan Anak Usia Dini</option>
+                                                    <option value="ekonomi-pembangunan">S1-Ekonomi Pembangunan</option>
+                                                    <option value="ekonomi-syariah">S1-Ekonomi Syariah</option>
+                                                    <option value="AKP">S1-Akuntansi Keuangan Publik</option>
+                                                    <option value="pariwisata">S1-Pariwisata</option>
+                                                    <option value="statistika">S1-Statistika</option>
+                                                    <option value="matematika">S1-Matematika</option>
+                                                    <option value="bio">S1-Biologi</option>
+                                                    <option value="tekpang">S1-Teknologi Pangan</option>
+                                                    <option value="agribisnis">S1-Agribisnis</option>
+                                                    <option value="pwk">S1-Perencanaan Wilayah dan Kota</option>
+                                                    <option value="sainsdata">S1-Sains Data</option>
+                                                    <option value="admin-negara">S1-Ilmu Administrasi Negara</option>
+                                                    <option value="admin-bisnis">S1-Ilmu Administrasi Bisnis</option>
+                                                    <option value="perpustakaan">S1-Ilmu Perpustakaan</option>
+                                                    <option value="sosiologi">S1-Sosiologi</option>
+                                                    <option value="S1-Pajak">S1-Perpajakan</option>
+                                                    <option value="pbsi">S1-Pendidikan Bahasa dan Sastra Indonesia</option>
+                                                    <option value="pbhsinggris">S1-Pendidikan Bahasa Inggris</option>
+                                                    <option value="pbio">S1-Pendidikan Biologi</option>
+                                                    <option value="pfis">S1-Pendidikan Fisika</option>
+                                                    <option value="pkim">S1-Pendidikan Kimia</option>
+                                                    <option value="pmat">S1-Pendidikan Matematika</option>
+                                                    <option value="peko">S1-Pendidikan Ekonomi</option>
+                                                    <option value="pkn">S1-Pendidikan Pancasila dan Kewarganegaraan</option>
+                                                    <option value="tekpend">S1-Teknologi Pendidikan</option>
+                                                    <option value="pai">S1-Pendidikan Agama Islam</option>
+                                                    <option value="ppg">Pendidikan Profesi Guru</option>
+                                                    <option value="Studi-Lingkungan">Magister Studi Lingkungan</option>
+                                                    <option value="S2-manajer-perikanan">Magister Manajemen Perikanan</option>
+                                                    <option value="S2-admin-publik">Magister Administrasi Publik</option>
+                                                    <option value="S2-manajemen">Magister Manajemen</option>
+                                                    <option value="S2-pendidikan-dasar">Magister Pendidikan Dasar</option>
+                                                    <option value="S2-pmat">Magister Pendidikan Matematika</option>
+                                                    <option value="S2-pbi">Magister Pendidikan Bahasa Inggris</option>
+                                                    <option value="S2-paud">Magister Pendidikan Anak Usia Dini</option>
+                                                    <option value="S2-hukum">Magister Hukum</option>
+                                                    <option value="S3-majanemen">Doktor Ilmu Manajemen</option>
+                                                    <option value="S3-admin-publik">Doktor Administrasi Publik</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="ktp" class="form-label">Pas Foto Formal</label>
+                                                <input type="file" class="form-control" id="ktp" name="foto" accept=".png,.jpg,.jpeg" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="ktp" class="form-label">Fotocopy KTP</label>
+                                                <input type="file" class="form-control" id="ktp" name="ktp" accept=".png,.jpg,.jpeg" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="ijazah" class="form-label">Fotocopy Ijazah Legalisir</label>
+                                                <input type="file" class="form-control" id="ijazah" name="ijazah" accept=".pdf" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formpendaftaran" class="form-label">Upload Formulir (dijadikan 1 file)<br>unduh formulir <a class="small" href="download.html">disini</a></label>
+                                                <input type="file" class="form-control" id="formpendaftaran" name="formpmb" accept=".pdf" required>
+                                            </div>
+                                            <form id="registrationForm" action="pmb.php" method="post" enctype="multipart/form-data">
+                                                <button type="submit" class="btn btn-primary">Register</button>
+                                            </form>                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>   
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; SALUT IC Website 2024</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="https://wa.me/6285173433063" target="_blank">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
